@@ -8,14 +8,17 @@ using System.Web;
 
 namespace LindAgile.Web.DDD.Infrastructure
 {
-    public class WorkRepository : IWorkRepository
+    /// <summary>
+    /// 工作单仓储
+    /// </summary>
+    public class WorkRepository : EFRepository<Work_Item>, IWorkRepository
     {
         private readonly IRepository<Work_Item> _workRepository = new LindRepository<Work_Item>();
- 
+
         public void CreateWork(Work_Item entity)
         {
             _workRepository.Insert(entity);
         }
-        
+
     }
 }

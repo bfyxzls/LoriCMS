@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AuditWorkCommand.cs" />
     <Compile Include="Commands\CreateWorkCommand.cs" />
-    <Compile Include="Commands\CreateWorkCommandHandler.cs" />
+    <Compile Include="Commands\DelWorkCommand.cs" />
+    <Compile Include="Commands\EditWorkCommand.cs" />
+    <Compile Include="Commands\WorkCommandHandler.cs" />
     <Compile Include="DTO\Work_ItemDTO.cs" />
     <Compile Include="DTO\Work_ItemResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\WorkQuery.cs" />
+    <Compile Include="Specifications\WorkSpecifications.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Decorators\" />

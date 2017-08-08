@@ -66,6 +66,16 @@
     <Compile Include="ServiceBus\Bus\MemoryBus.cs" />
     <Compile Include="ServiceBus\IBusData.cs" />
     <Compile Include="ServiceBus\IBusHandler.cs" />
+    <Compile Include="Specification\ExpressionBuilder.cs" />
+    <Compile Include="Specification\internal\AndSpecification.cs" />
+    <Compile Include="Specification\internal\CompositeSpecification.cs" />
+    <Compile Include="Specification\internal\DirectSpecification.cs" />
+    <Compile Include="Specification\internal\NotSpecification.cs" />
+    <Compile Include="Specification\internal\OrSpecification.cs" />
+    <Compile Include="Specification\internal\ParametersRebinder.cs" />
+    <Compile Include="Specification\ISpecification.cs" />
+    <Compile Include="Specification\Specification.cs" />
+    <Compile Include="Specification\TrueSpecification.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
